@@ -30,12 +30,9 @@ package br.edu.infnet.appatcarlachagas.controller;
 			
 			return "redirect:/instituicao";
 		}
-
 			
 		@GetMapping(value = "/instituicao/{id}/excluir")
 		public String excluir (Model model, @PathVariable Integer id) {
-			
-			
 			try {
 				 instituicaoService.excluir(id);
 
@@ -47,17 +44,6 @@ package br.edu.infnet.appatcarlachagas.controller;
 			
 			return "redirect:/instituicao";
 		}
-
-		@GetMapping(value = "/instituicao/{id}/excluir")
-		public String excluir (@PathVariable Integer id) {
-			
-			
-
-			instituicaoService.excluir(id);
-			
-			
-			return "redirect:/instituicao";
-		}	
 		
 	}
 

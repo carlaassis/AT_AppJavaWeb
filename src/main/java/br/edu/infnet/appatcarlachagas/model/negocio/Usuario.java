@@ -63,5 +63,4 @@ public class Usuario {
 	public void setGit(String git) {
 		this.git = git;
 	}
-
 }

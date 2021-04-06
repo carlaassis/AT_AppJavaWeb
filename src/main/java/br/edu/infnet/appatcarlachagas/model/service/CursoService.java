@@ -32,7 +32,5 @@ public class CursoService {
 	
 	public void excluir (Integer id) {
 		cursoRepository.deleteById(id);
-	}
-	
-	
+	}	
 }

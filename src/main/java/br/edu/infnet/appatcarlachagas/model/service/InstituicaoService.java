@@ -26,5 +26,4 @@ public class InstituicaoService {
 	public List<Instituicao> obterLista () {
 		return (List<Instituicao>)instituicaoRepository.findAll();
 	}
-
 }

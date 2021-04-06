@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import br.edu.infnet.appatcarlachagas.model.negocio.Instituicao;
+
 import br.edu.infnet.appatcarlachagas.model.negocio.Usuario;
 import br.edu.infnet.appatcarlachagas.model.repository.IUsuarioRepository;
 
@@ -26,9 +26,8 @@ public class UsuarioService {
 	public void incluir(Usuario usuario) {
 		usuarioRepository.save(usuario);
 	}
-	//excluir
+
 	public void excluir (Integer id) {
 		usuarioRepository.deleteById(id);
 	}
-
 }
